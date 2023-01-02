@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <div class="left">
+        <div class="logo_box">
+            <img src="images/logo.jpg">EXPLORE NYC
+        </div>
+        <p>Photo By Craig Adderley on [<a href="https://www.pexels.com/">Pexels</a>]</p>
+    </div>
+    <div class="right">
+        <div class="info_section">
+            <p>
+                So you have just landed in nyc and want to see all the sights and views 
+                that this beautiful city has to offer. Well look no further and sign up
+                with our teams exploration service. (This is not a real online service!)
+            </p>
+            <p id="alone">Simple and well planned adventure.</p>
+        </div>
+        <div class="form_box">
+            <p>Welcome to NYC!</p>
+            <form id="sign_up">
+                <label for="first_name">
+                    FIRST NAME:
+                    <input type="text" id="first_name" name="first_name" required>
+                </label>
 
+                <label for="last_name">
+                    LAST NAME:
+                    <input type="text" id="last_name" name="last_name" required>
+                </label>
+
+                <label for="email" >
+                    EMAIL:
+                    <input type="email" id="email" name="email" required>
+                </label>
+
+                <label for="phone">
+                    PHONE NUMBER:
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                </label>
+
+                <label for="pass">
+                    PASSWORD:
+                    <input type="password" id="pass" name="pass" required>
+                </label>
+
+                <label for="confirm_pass">
+                    CONFIRM PASSWORD:
+                    <input type="password" id="confirm_pass" name="confirm_pass" required>
+                </label>
+            </form>
+        </div>
+        <div class="submit_section">
+            <button id="btn" type="submit" form="sign_up">Create Account</button>
+            <p>Already have an account?<a href="#"> Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>

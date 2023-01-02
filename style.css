@@ -1,1 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+}
 
+body
+{
+    display: flex;
+}
+
+.left
+{
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('images/bg_pic.jpg');
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+}
+
+.left p
+{
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.right
+{
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+form
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.form_box
+{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 24px;
+    padding-top: 32;
+    background-color: rgb(243, 241, 241);
+    box-shadow:4px 4px rgba(0,0,0,0.12);
+}
+
+.form_box p
+{
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+input
+{
+    width: 250px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.info_section
+{
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 24px;
+    padding-right: 34px;
+}
+
+.submit_section
+{
+    padding-left: 24px;
+}
+
+#alone
+{
+    margin-top: 15px;
+}
+
+button
+{
+    margin-bottom: 15px;
+    padding: 12px 68px 12px 68px;
+    border-radius: 4px;
+    font-weight: bolder;
+    background-color: darkcyan;
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+a
+{
+    text-decoration: none;
+    font-weight: bolder;
+    color: darkcyan;
+}
+
+input
+{
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+input:focus
+{
+    box-shadow:5px 5px rgba(0, 139, 139, 0.5);
+    outline: none;
+}
+
+.logo_box img
+{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100px;
+    margin-right: 12px;
+}
+
+.logo_box
+{
+    font-size: 48px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.53;
+    color: rgb(255, 255, 255);
+    padding: 48px;
+}
